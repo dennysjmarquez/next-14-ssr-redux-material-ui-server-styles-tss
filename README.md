@@ -1,40 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto Next.js 14 con SSR, Redux, Material-UI y TSS-React
 
-## Getting Started
+Este repositorio es una plantilla para construir aplicaciones con Next.js 14, utilizando Server-Side Rendering (SSR), Redux para el manejo del estado, Material-UI para los componentes de la interfaz de usuario y TSS-React para los estilos.
 
-First, run the development server:
+## Tecnologías Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Next.js](https://nextjs.org/)
+- [Redux](https://redux.js.org/)
+- [Material-UI](https://material-ui.com/)
+- [TSS-React](https://github.com/atlassian-labs/tss-react)
+
+## Características
+
+- **Server-Side Rendering (SSR)**: Next.js permite renderizar las páginas en el servidor, lo que mejora el rendimiento y el SEO al entregar HTML completamente renderizado al cliente.
+- **Redux**: El estado de la aplicación se maneja con Redux, y está configurado para almacenar y cargar información desde el servidor utilizando SSR de Next.js, proporcionando una carga inicial más rápida y una mejor experiencia de usuario.
+- **Material-UI**: Utilizamos Material-UI para los componentes de la interfaz de usuario, proporcionando una apariencia moderna, consistente y altamente personalizable.
+- **TSS-React**: TSS-React se utiliza para gestionar los estilos de los componentes. Esto asegura que los estilos se carguen desde el servidor, mejorando el rendimiento y eliminando problemas como los saltos de estilo (Flicker).
+
+
+## Instalación
+
+Para comenzar a utilizar esta plantilla, sigue estos pasos:
+
+```sh
+git clone https://github.com/tu-usuario/tu-repositorio.git
+cd tu-repositorio
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Uso
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Para iniciar el servidor de desarrollo, ejecuta:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```sh
+npm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Esto iniciará la aplicación en modo de desarrollo y estará disponible en `http://localhost:3000`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Beneficios del SSR y TSS-React
 
-## Learn More
+- **Mejor SEO**: El SSR permite que los motores de búsqueda indexen el contenido de manera más efectiva, ya que el HTML se genera en el servidor.
+- **Rendimiento Mejorado**: La carga inicial es más rápida porque el HTML y los estilos se entregan desde el servidor.
+- **Experiencia de Usuario Mejorada**: Al cargar los estilos desde el servidor, se eliminan los saltos de estilo, proporcionando una experiencia de usuario más fluida y consistente.
 
-To learn more about Next.js, take a look at the following resources:
+## Contribuciones
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Las contribuciones son bienvenidas. Si encuentras algún problema o tienes alguna sugerencia, por favor abre un issue o envía un pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Espero que esta versión mejorada te sea útil. Si necesitas más ayuda o tienes alguna otra pregunta, no dudes en decírmelo.
